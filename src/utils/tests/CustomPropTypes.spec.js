@@ -1,7 +1,8 @@
 import CustomPropTypes from '../CustomPropTypes';
 
-import moment from 'moment';
-import {} from 'moment-range';
+import Moment from 'moment';
+import { extendMoment } from 'moment-range';
+const moment = extendMoment(Moment);
 
 describe('CustomPropTypes', function () {
 

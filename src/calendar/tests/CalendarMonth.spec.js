@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
 import CalendarMonth from '../CalendarMonth';
 import CalendarDate from '../CalendarDate';
-import moment from 'moment';
-import {} from 'moment-range';
+import Moment from 'moment';
+import { extendMoment } from 'moment-range';
+const moment = extendMoment(Moment);
 import _ from 'underscore';
 
 

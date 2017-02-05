@@ -3,8 +3,9 @@ import PaginationArrow from '../PaginationArrow';
 import CalendarMonth from '../calendar/CalendarMonth';
 import Legend from '../Legend.jsx';
 
-import moment from 'moment';
-import 'moment-range';
+import Moment from 'moment';
+import { extendMoment } from 'moment-range';
+const moment = extendMoment(Moment);
 import isMomentRange from '../utils/isMomentRange';
 import areMomentRangesEqual from '../utils/areMomentRangesEqual';
 import Immutable from 'immutable';
